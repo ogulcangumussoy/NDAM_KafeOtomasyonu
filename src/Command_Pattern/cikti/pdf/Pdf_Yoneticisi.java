@@ -11,6 +11,8 @@ import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Image;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
+import java.awt.Desktop;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -46,12 +48,6 @@ public class Pdf_Yoneticisi  {
        }
        return mesaj;
     }
-    public void deneme(){
-        System.out.println("Merhaba");
-    }
-     public void deneme2(){
-        System.out.println("Merhaba Dünya");
-    }
 
     public void Pdfolustur(String musteri_ad,String kasiyer_ad,String siparis_tarihi,String odeme_turu,String toplam_tutar) throws DocumentException, IOException {
       
@@ -75,7 +71,21 @@ public class Pdf_Yoneticisi  {
       document.add(new Paragraph("Toplam Tutar: " + toplam_tutar+" TL"));
       document.add(new Paragraph(karakterCevir("\n\n\n\n\n\n\n\n \t\t\t COFFEE HOUSE CAFE | ISPARTA")));
       document.close();
+      
+      pdfAc(dosyaYolu);
   }
+    public void pdfAc(String dosyaYolu){
+        if (Desktop.isDesktopSupported()) {
+            try {
+                File myFile = new File(dosyaYolu);
+                Desktop.getDesktop().open(myFile);
+            } catch (IOException ex) {
+                // no application registered for PDFs
+            }
+    }
+    
+    
+}
      
     
     

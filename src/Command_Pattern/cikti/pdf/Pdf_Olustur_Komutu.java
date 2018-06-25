@@ -33,12 +33,6 @@ public class Pdf_Olustur_Komutu extends Komut {
             Logger.getLogger(Pdf_Olustur_Komutu.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        try {
-             yonetici.deneme2();
-        } catch (NullPointerException e) {
-            System.out.println("Deneme deneme");
-             
-        }
       
     }
 

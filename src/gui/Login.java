@@ -67,7 +67,7 @@ public class Login extends javax.swing.JFrame {
         label3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         label3.setText("Parola");
 
-        tf_kullaniciadi.setText("ogulcan");
+        tf_kullaniciadi.setText("kasiyer");
         tf_kullaniciadi.setToolTipText("");
         tf_kullaniciadi.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {

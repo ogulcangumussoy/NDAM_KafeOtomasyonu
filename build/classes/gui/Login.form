@@ -160,7 +160,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="tf_kullaniciadi">
           <Properties>
-            <Property name="text" type="java.lang.String" value="ogulcan"/>
+            <Property name="text" type="java.lang.String" value="kasiyer"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
           <Events>

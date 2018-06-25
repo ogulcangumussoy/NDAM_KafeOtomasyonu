@@ -277,7 +277,7 @@ public class Yonetim extends javax.swing.JFrame {
                 e.printStackTrace();
             }
             
-            JOptionPane.showMessageDialog(null,"Faturanıza Sipariş Kayıtları dizininden erişebilirsiniz.","Faturanız Oluşturuldu!", JOptionPane.INFORMATION_MESSAGE);
+            //JOptionPane.showMessageDialog(null,"Faturanıza Sipariş Kayıtları dizininden erişebilirsiniz.","Faturanız Oluşturuldu!", JOptionPane.INFORMATION_MESSAGE);
             
             
             }    
